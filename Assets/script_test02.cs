@@ -9,6 +9,7 @@ public class script_test02 : MonoBehaviour
     {
         Debug.Log("공동작업시작");
         Debug.Log("script_test02");
+        Debug.Log("충돌");
     }
 
     // Update is called once per frame
