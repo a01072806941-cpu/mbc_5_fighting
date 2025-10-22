@@ -23,6 +23,6 @@ public class HelloWorld2 : MonoBehaviour
     }
     void change_color()
     {
-        mySR.color = Color.red;
+        mySR.color = Color.blue;
     }
 }
