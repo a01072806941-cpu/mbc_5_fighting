@@ -13,7 +13,7 @@ public class Script_test : MonoBehaviour
         Debug.Log("start");
         Debug.Log("aaa");
         Debug.Log("good");
-        debug.log("songs");
+        Debug.Log("songs");
     }
 
     // Update is called once per frame
