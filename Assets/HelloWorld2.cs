@@ -9,6 +9,7 @@ public class HelloWorld2 : MonoBehaviour
     {
         Debug.Log("aaaaaaa");
         Debug.Log("bbbbbbb");
+        Debug.Log("공동작업중입니다");
     }
 
     // Update is called once per frame
