@@ -10,6 +10,7 @@ public class Script_test : MonoBehaviour
         Debug.Log("hello");
         Debug.Log("world");
         Debug.Log("Nice");
+    debug.log("start");
     }
 
     // Update is called once per frame
