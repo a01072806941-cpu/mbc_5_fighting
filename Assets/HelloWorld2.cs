@@ -18,7 +18,7 @@ public class HelloWorld2 : MonoBehaviour
         {
             change_color();
         }
-            
+        Debug.Log("aaa");
         
     }
     void change_color()
