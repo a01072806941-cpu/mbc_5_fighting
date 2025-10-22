@@ -4,17 +4,25 @@ using UnityEngine;
 
 public class HelloWorld2 : MonoBehaviour
 {
+    SpriteRenderer mySR;
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("aaaaaaa");
-        Debug.Log("bbbbbbb");
-        Debug.Log("공동작업중입니다");
+        mySR = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Return))
+        {
+            change_color();
+        }
+            
         
+    }
+    void change_color()
+    {
+        mySR.color = Color.red;
     }
 }
