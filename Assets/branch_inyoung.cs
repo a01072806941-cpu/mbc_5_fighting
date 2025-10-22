@@ -7,11 +7,9 @@ public class branch_inyoung : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-<<<<<<< HEAD
+        Debug.Log("branch001");
         Debug.Log("branch");
-=======
         Debug.Log("branch_001");
->>>>>>> aaa
     }
 
     // Update is called once per frame
