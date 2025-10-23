@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 public class Square : MonoBehaviour
@@ -18,19 +19,40 @@ public class Square : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Return))
         {
-            AA = StartCoroutine("change_color");
+            if (AA == null)
+            {
+                AA = StartCoroutine(change_color());
+            }
         }
 
         else if(Input.GetKey(KeyCode.Escape))
         {
-            StopCoroutine(AA);
+            if (AA != null)
+            {
+                StopCoroutine(AA);
+                AA = null;
+            }
         }
+       
     }
 
     IEnumerator change_color()
     {
-        yield return null;
-        mysr.color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
 
+       Color mycolor = new Color(0.0001f, 0.0001f, 0.0001f, 0.0f);
+
+        while(true)
+        {
+            if (mysr.color.r == 0)
+            {
+                Debug.Log("에볼루션 컴플리트");
+                AA = null;
+                yield break;
+            }
+
+            mysr.color -= mycolor;
+            yield return null;
+
+        }
     }
 }
